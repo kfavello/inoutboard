@@ -182,7 +182,7 @@ function InOutBoard() {
     script.onload = async () => {
       try {
      const msalInstance = new window.msal.PublicClientApplication({
-  auth: { clientId: CONFIG.clientId, authority: "https://login.microsoftonline.com/bf266c07-4cc7-4ba5-97f1-99a4a77b5acd", redirectUri: "https://kfavello.github.io/inoutboard" }
+  auth: { clientId: CONFIG.clientId, authority: "https://login.microsoftonline.com/bf266c07-4cc7-4ba5-97f1-99a4a77b5acd", redirectUri: "https://kfavello.github.io/inoutboard/" }
 });
         await msalInstance.initialize();
         const token = await getMsalToken(msalInstance);
